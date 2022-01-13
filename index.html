@@ -9,49 +9,226 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="vendor/aos/aos.css" rel="stylesheet">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
- 
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="vendor/aos/aos.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+       
 
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2Y42JKZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!--Import jQuery Library-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!--Import materialize.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  gtag('config', 'G-YE2Y42JKZD');
-</script>
-      
+        <!-- Template Main CSS File -->
+        <link href="css/style.css" rel="stylesheet">
+
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE2Y42JKZD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YE2Y42JKZD');
+      </script>
+
     </head>
-    <body>
-        
+<body>
+
+<script>
+// Some random colors
+const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+const numBalls = 50;
+const balls = [];
+
+for (let i = 0; i < numBalls; i++) {
+  let ball = document.createElement("div");
+  ball.classList.add("ball");
+  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+  ball.style.transform = `scale(${Math.random()})`;
+  ball.style.width = `${Math.random()}em`;
+  ball.style.height = ball.style.width;
+  
+  balls.push(ball);
+  document.body.append(ball);
+}
+
+// Keyframes
+balls.forEach((el, i, ra) => {
+  let to = {
+    x: Math.random() * (i % 2 === 0 ? -11 : 11),
+    y: Math.random() * 12
+  };
+
+  let anim = el.animate(
+    [
+      { transform: "translate(0, 0)" },
+      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+    ],
+    {
+      duration: (Math.random() + 1) * 2000, // random duration
+      direction: "alternate",
+      fill: "both",
+      iterations: Infinity,
+      easing: "ease-in-out"
+    }
+  );
+});
+</script>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="700">
-      <h1>Tomas Laidlaw</h1>
-      <p> <span class="typed" data-typed-items=" I do web dev, I´m always updating the CSS :), I currently live in Argentina , I write things, I´m a Tech enthusiast"></span></p>
-      <div class="social-links">
-      </div>
-      <div class="social-links">
-        <a href="https://github.com/tomaslaidlaw" class="github"><i class="bx bxl-github"></i></a>
-      </div>
 
+      <h1>Tomas Laidlaw</h1>
+      <p> <br> </p>
+      
+        <p>Soy Tecnico programador, difruto haciendo cosas para la  <span data-open="modal3" id="hvr-out"  > web</span>. Tengo más de 15 años de experiencia en sistemas operativos, programación y mantenimiento de plataformas. <br><br> <span data-open="modal1"  id="hvr-out" > Administro</span>  sistemas y bases de datos. Colaboro en equipos multidisciplinarios, mejorando procesos y ejecutando proyectos. Me enfoco en entornos Linux, y uso lenguajes como PHP, CSS, boostrap, JavaScript y SQL. <br><br>Tambien, me embarque en la apasionante aventura de escribir un <span data-open="modal2" id="hvr-out" >libro </span>... Proximamente agregare una seccion de notas</p>
+          
+        
+      
   </section><!-- End Hero -->
  
+
+<div class="modal" id="modal1">
+  <div class="modal-dialog">
+
+    <section class="modal-content">
+      
+<div class="  my-5 py-5" >    
+  <!-- Section -->
+  <section >     
+          <div class="row d-flex justify-content-center" > 
+            <div class="col-md-6 col-lg-5 col-xl-4" >
+              <h1 class="font-weight-normal  pt-4 mb-4" style="color: #c7dc3d;"> Web & Hosting </h1>
+              <p class="text-muted mb-5 pb-md-3" style="font-size: 1.5em;"> Manejo servicios & plataformas web. Gestiono hosting, servicios web y VPS.</p>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4" >
+              <img src="img/4178964_cloud_computing_data_hosting_network_icon.png" >
+            </div>
+        </section>
+        <!-- Section -->
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-dialog">
+    <section class="modal-content">      
+<div class="  my-5 py-5" >    
+  <!-- Section -->
+  <section >     
+      <div class="row d-flex justify-content-center" > 
+      <div class="col-md-6 col-lg-5 col-xl-4">
+        <img src="img/1608583_book_icon.png" >         
+      </div>
+
+      <div class="col-md-6 col-lg-5 col-xl-4" >
+        <h1 class="font-weight-normal  pt-4 mb-4" >  Publicaciones </h1>
+        <p class="text-muted mb-5 pb-md-3" style="font-size: 1.5em;">Ya se encuentra publicado <span style="font-style: italic; "> Historias de un mundo digital</span>. Editorial Autores de Argentina, 2020 -
+         <a href="https://historiasdeunmundodigital.com/"> Link </a> </p>
+      </div>
+      </div>
+        </section>
+        <!-- Section -->
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="modal" id="modal3">
+  <div class="modal-dialog">
+    <section class="modal-content">      
+<div class="  my-5 py-5" >    
+  <!-- Section -->
+  <section >     
+      <div class="row d-flex justify-content-center" > 
+          <div class="col-md-6 col-lg-5 col-xl-4" >
+            <h1 class="font-weight-normal  pt-4 mb-4" style="color: #c7dc3d;"> Web dev </h1>
+            <p class="text-muted mb-5" style="font-size: 1.5em;"> 
+              Me oriento al desarrollo web. Ire subiendo y actualizando algunos proyectos en <a href="https://github.com/tomaslaidlaw"> Github</a>. 
+            Estas son algunas de las tecnologias que manejo
+            <br>
+              <img src="img/315005_document_file_css_icon.png">
+              <img src="img/315014_php_document_file_icon.png">
+              <img src="img/282806_jquery_logo_icon.png">
+              <img src="img/8673265_ic_fluent_document_javascript_filled_icon.png">
+              <img src="img/1012821_code_development_logo_mysql_icon.png">
+              <img src="img/4691328_postgresql_icon.png">
+              <img src="img/345397_wordpress_icon.png">
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-4" >
+                <img src="img/7422372_visualstudio_visual_developer_code_icon.png" >
+        </div>
+      </div>
+        </section>
+        <!-- Section -->
+      </div>
+    </section>
+
+  </div>
+</div>
+
+
+
+
+<script>
+const openEls = document.querySelectorAll("[data-open]");
+const closeEls = document.querySelectorAll("[data-close]");
+const isVisible = "is-visible";
+
+for (const el of openEls) {
+  el.addEventListener("click", function() {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+
+for (const el of closeEls) {
+  el.addEventListener("click", function() {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+document.addEventListener("click", e => {
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+
+document.addEventListener("keyup", e => {
+  // if we press the ESC
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+</script>
+
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="asap2">
+  <path fill="#c2d929" d="M60.9,-38.9C71.9,-16,69.1,11.2,56.7,30C44.2,48.8,22.1,59.3,-3.2,61.1C-28.5,63,-56.9,56.1,-67,38.7C-77.1,21.2,-68.7,-6.8,-54.5,-31.5C-40.3,-56.3,-20.1,-77.6,2.4,-79C24.9,-80.4,49.8,-61.8,60.9,-38.9Z" transform="translate(100 100)" />
+</svg>
+
+ <img src="https://avatars.githubusercontent.com/u/97003193?v=4" class="asap">
+
+
+
+ 
+
  <!-- Código de instalación Cliengo para codetom.dev --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/611edeff8241d4002ac7cce0/611edf018241d4002ac7cce3.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
 
-
-
+ 
 <!-- AboutUs  -->
 
   <!-- Vendor JS Files -->
@@ -66,8 +243,6 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
- 
 
-     
-    </body>
+     </body>
 </html>

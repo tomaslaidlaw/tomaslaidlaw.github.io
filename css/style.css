@@ -19,7 +19,8 @@ a:hover {
   border-radius: 5px;
   border-top: 3px solid #c7dc3d;
   border-bottom: 3px solid #c7dc3d;
-  cursor: -webkit-grab; cursor: grab;
+  cursor: -webkit-grab;
+  cursor: grab;
 
 }
 
@@ -63,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 #hvr-out:hover {
   transition: 0.10s;
   opacity: 1;
+  cursor: -webkit-grab;
+  cursor: grab;
   }
 
 @media (max-width: 992px) {

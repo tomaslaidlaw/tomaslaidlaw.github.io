@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 .ball {
   position: fixed;
   border-radius: 2%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 11px 0 0 0;
   font-size: 1em;
   font-family: "Poppins", sans-serif;
-  z-index:2;
+  z-index:0;
 }
 #hero p span {
   color: #8e9194;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
   line-height: 1;
   margin-right: 20px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 #hero .social-links a:hover {
   color: #0563bb;
@@ -157,6 +157,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: .9;
     height: 34%;
     border-radius: 50%;
+      display: inline-block;
+  transition: 0.1s;
 }
 
 .asap2{
@@ -166,6 +168,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
     opacity: .9;
     height: 74%;
+      display: inline-block;
+  transition: 0.1s;
 }
   
 
@@ -200,6 +204,8 @@ h1, h2, h3, h4, h5, h6 {
       opacity: .9;
       height: 7%;
       border-radius: 50%;
+      display: inline-block;
+      transition: 0.1s;      
   }
   .asap2{
       position:absolute;
@@ -208,6 +214,8 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 0;
       opacity: .9;
       height: 18%;
+      display: inline-block;
+      transition: 0.1s;      
   }
   #hero p {
     max-width: 85%;

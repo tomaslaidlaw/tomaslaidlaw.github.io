@@ -14,6 +14,7 @@ a {
 }
 
 a:hover {
+  /*
   color: #111;
   background-color: #c7dc3d;
   border-radius: 5px;
@@ -21,7 +22,7 @@ a:hover {
   border-bottom: 3px solid #c7dc3d;
   cursor: -webkit-grab;
   cursor: grab;
-
+  */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   text-decoration: none;
   font-weight: 600;
+  z-index: 0;
 
 }
 #hvr-out::before {
@@ -67,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.5s ease-in-out;
   border-radius: 7px;
   color:#111;
-  opacity:0.7;
+  z-index: -1;
 }
 
 #hvr-out:hover::before {
@@ -95,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: yellow;
-  background: #a7a7a7;
+  background: #afc1bb;
   z-index: 99;
  
 }
